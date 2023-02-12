@@ -400,6 +400,12 @@ body {
 
 .footer-socials{
     margin-top: 0;
+    margin-left: 120px;
+}
+
+.footer-subscribe{
+    margin-top: 0;
+    margin-left: 88px;
 }
 
 .paragraph-socials{
@@ -411,7 +417,7 @@ body {
 
 .footer-box{
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 /*portfolio*/
@@ -542,4 +548,170 @@ body {
         transform: translate(-50%, -50%) scale(1);
     }
     
+}
+
+
+.order-form{
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph-order{
+    text-align: center;
+    font-weight: 500;
+    padding: 72px 0 14px 0;
+    margin: 0;
+}
+
+.btn-order{
+    width: 105px;
+    justify-content: center;
+    background-color: var(--primary-brand-color);
+    color: var(--white-color);
+}
+
+.order-input{
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color var(--anim-norm);
+}
+
+.order-input:focus{
+    border-color: var(--primary-brand-color);
+}
+
+
+.order-label{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.75;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text-color);
+    transition: color var(--anim-norm);
+}
+
+.order-label:focus-within{
+    color: var(--primary-brand-color);
+}
+
+.order-icon{
+    position: absolute;
+    fill: var(--dark-color);
+    top: 34px;
+    left: 19px;
+    pointer-events: none;
+    transition: fill  var(--anim-norm);
+}
+
+.order-input:focus + .order-icon{
+    fill: var(--primary-brand-color);
+}
+
+.user-comment{
+    resize: none;
+    box-sizing: border-box;
+    outline: transparent;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 8px 0 0 16px;
+    transition: border-color var(--anim-norm);
+}
+
+.user-comment:focus{
+    border-color: var(--primary-brand-color);
+}
+
+.user-comment::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+}
+
+.form-order-box{
+    position: relative;
+}
+
+.order-agree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.75;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text-color);
+}
+
+.agree-link{
+    color: var(--primary-brand-color);
+    text-decoration: underline;
+}
+
+.agree-checkbox{
+    appearance: none; 
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid var(--dark-color);
+    border-radius: 2px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23fff' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color var(--anim-norm), border-color var(--anim-norm);
+}
+
+.agree-checkbox:checked{
+    background-color: var(--brand-hover-color);
+    border-color: var(--brand-hover-color);
+}
+
+.subscribe-box{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 24px;
+}
+
+.btn-subscribe{
+    box-sizing: border-box;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--primary-brand-color);
+    color: var(--white-color);
+}
+
+.subscribe-input{
+    box-sizing: border-box;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 0 8px 16px;
+    outline: transparent;
+    transition: border-color var(--anim-norm);
+    color: var(--white-color);
+}
+
+.subscribe-input:focus {
+    border-color: var(--primary-brand-color);
 }
