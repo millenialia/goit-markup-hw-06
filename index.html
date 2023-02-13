@@ -594,6 +594,7 @@
                 id="user_email"
                 class="subscribe-input"
                 placeholder="E-mail"
+                required
               />
               <button type="submit" class="btn btn-subscribe">
                 Subscribe
@@ -620,7 +621,13 @@
           </p>
           <div class="form-order-box">
             <label for="user_name" class="order-label"> Name</label>
-            <input type="text" name="name" id="user_name" class="order-input" />
+            <input
+              type="text"
+              name="name"
+              id="user_name"
+              class="order-input"
+              required
+            />
             <svg class="order-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-name"></use>
             </svg>
@@ -632,8 +639,9 @@
               name="phone"
               id="user_phone"
               class="order-input"
+              required
             />
-            <svg class="order-icon" width="18" height="18">
+            <svg class="order-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
@@ -644,8 +652,9 @@
               name="email"
               id="user_email"
               class="order-input"
+              required
             />
-            <svg class="order-icon" width="18" height="18">
+            <svg class="order-icon" width="18" height="24">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
@@ -661,7 +670,12 @@
           </div>
           <div class="">
             <label for="usser_agree" class="order-agree">
-              <input type="checkbox" id="usser_agree" class="agree-checkbox" />
+              <input
+                type="checkbox"
+                id="usser_agree"
+                class="agree-checkbox"
+                required
+              />
               <span>
                 I accept the terms and conditions of the
                 <a href="#" class="agree-link link">Privacy Policy</a></span
